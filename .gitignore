@@ -14,9 +14,3 @@ env/
 
 # Ignore node-gyp temporary files
 .node-gyp
-
-# Ensure important files are included
-!requirements.txt
-!Pipfile
-!Procfile
-!runtime.txt
