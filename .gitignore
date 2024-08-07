@@ -1,0 +1,16 @@
+# Ignore environment files
+.env
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore Glitch-specific files
+.glitchdotcom.json
+
+# Ignore node-gyp temporary files
+.node-gyp
