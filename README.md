@@ -17,21 +17,26 @@ Koodikaveri Bot on Discord-botti, joka tarjoaa ohjelmointiopastusta ja tietoa er
 
 Luo `.env`-tiedosto projektin juureen ja lisää seuraava ympäristömuuttuja:
 
-```DISCORD_TOKEN=your_discord_bot_token```
+    DISCORD_TOKEN=your_discord_bot_token
 
 ### Huom: Älä koskaan tallenna .env-tiedostoa versionhallintaan. Lisää se .gitignore-tiedostoon.
 
 ## Asennus
 1. Kloonaa Repositorio:
-```git clone https://github.com/micsno/koodikaveri.git```
-```cd koodikaveri```
+
+    git clone https://github.com/micsno/koodikaveri.git
+
+    cd koodikaveri
 
 2. Luo Virtuaaliympäristö (valinnainen, mutta suositeltava):
-```python -m venv venv```
-```source venv/bin/activate  # Windows: venv\Scripts\activate```
+
+    python -m venv venv
+
+    source venv/bin/activate  # Windows: venv\Scripts\activate
 
 3. Asenna Riippuvuudet:
-```pip install -r requirements.txt```
+
+    pip install -r requirements.txt
 
 ## Käynnistä Bottisi
 
