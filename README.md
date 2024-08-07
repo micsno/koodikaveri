@@ -9,7 +9,7 @@ Koodikaveri Bot on Discord-botti, joka tarjoaa ohjelmointiopastusta ja tietoa er
 - **Dokumentaation haku**: Hakee dokumentaatiolinkkejä ohjelmointikielille ja kehyksille.
 - **Koodin esimerkit**: Näyttää esimerkkikoodia eri kielillä.
 - **Koodin tarkistus**: Tarkistaa koodinpätkien syntaksin.
-- **Tervetuloa- ja meme-komennot**: Jakaa memejä ja lähettää tervetuloviestejä uusille jäsenille.
+- **Tervetuloa- komento**: Lähettää tervetuloviestejä uusille jäsenille.
 
 ## Käyttöönotto
 
