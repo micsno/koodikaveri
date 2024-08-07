@@ -35,7 +35,7 @@ Luo `.env`-tiedosto projektin juureen ja lisää seuraava ympäristömuuttuja:
 
 ## Käynnistä Bottisi
 
-** Käynnistä Bottisi Paikallisesti:** ```python bot.py```
+**Käynnistä Bottisi Paikallisesti:** ```python bot.py```
 
 ## Kielituki
 
