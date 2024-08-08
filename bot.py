@@ -22,10 +22,11 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    guild = member.guild
-    if guild.system_channel is not None:
-        to_send = f'Tervetuloa, {member.mention}, {guild.name}-palvelimelle! Käytä `!ohje` saadaksesi ohjeet botin käyttöön.'
-        await guild.system_channel.send(to_send)
+    welcome_channel_id = 959401105228431389
+    channel = bot.get_channel(welcome_channel_id)
+    if channel is not None:
+        to_send = f'Tervetuloa, {member.mention}, {member.guild.name}-palvelimelle! Käytä `!ohje` saadaksesi ohjeet botin käyttöön.'
+        await channel.send(to_send)
 
 @bot.command()
 async def ping(ctx):
