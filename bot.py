@@ -22,7 +22,7 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    welcome_channel_id = 959401105228431389
+    welcome_channel_id = 959401105228431389 # Replace with your welcome channel ID
     channel = bot.get_channel(welcome_channel_id)
     if channel is not None:
         to_send = f'Tervetuloa, {member.mention}, {member.guild.name}-palvelimelle! Käytä `!ohje` saadaksesi ohjeet botin käyttöön.'
