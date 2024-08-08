@@ -28,8 +28,6 @@ async def on_member_join(member):
         to_send = f'Tervetuloa, {member.mention}, {member.guild.name}-palvelimelle! Olen kanavan Koodikaveri! Käytä `!ohje` saadaksesi ohjeet botin käyttöön.'
         await channel.send(to_send)
 
-@bot.
-
 @bot.command()
 async def ping(ctx):
     await ctx.send('```\nPong!\n```')
@@ -101,17 +99,6 @@ Virallinen dokumentaatio: https://reactnative.dev/docs/getting-started
     await ctx.send(response)
 
 @bot.command()
-async def tailwind(ctx):
-    response = """
-Tailwind CSS on mukautettava CSS-kehyksen, joka perustuu utility-first -suunnitteluun.
-- Käytä valmiita luokkia (esim. bg-blue-500, p-4) määrittämään tyylejä.
-- Luo mukautettuja teemoja ja komponentteja helposti.
-- Käytä JIT-kääntäjää optimoidaksesi tuotantokoodia.
-Virallinen dokumentaatio: https://tailwindcss.com/docs
-"""
-    await ctx.send(response)
-
-@bot.command()
 async def kysy(ctx, *, query):
     response = requests.get(f'https://api.stackexchange.com/2.3/search/advanced',
                             params={'order': 'desc', 'sort': 'relevance', 'q': query, 'site': 'stackoverflow'})
@@ -142,7 +129,7 @@ async def docs(ctx, language: str, query: str):
         'react': f'https://reactjs.org/search?q={query}',
         'react_native': f'https://reactnative.dev/docs/search?q={query}',
         'html': f'https://developer.mozilla.org/en-US/search?q={query}&topic=html',
-        'css': f'https://developer.mozilla.org/en-US/search?q={query}&topic=css',
+        'css': f'https://developer.mozilla.org/en-US/search?q={query}&topic=css'
     }
     if language.lower() in docs_urls:
         await ctx.send(f'Linkki {language} dokumentaatioon: {docs_urls[language.lower()]}')
@@ -240,11 +227,10 @@ async def ohje(ctx):
 - `!javascript`: Näyttää JavaScript-kielestä tietoa.
 - `!html`: Näyttää HTML:stä tietoa.
 - `!css`: Näyttää CSS:stä tietoa.
-- `!tailwind`: Näyttää Tailwind CSS -kehyksestä tietoa.
 - `!python`: Näyttää Python-kielestä tietoa.
 - `!kysy <kysymys>`: Hakee ja palauttaa Stack Overflowsta kysymyksen, joka vastaa hakusanaasi.
 - `!fetch_answer <URL>`: Hakee ja näyttää ensimmäisen löydetyn <p>-tagin sisällön annetusta URL:stä.
-- `!docs <kieli> <haku>`: Hakee tietyn ohjelmointikielen tai kirjaston dokumentaatiosta annettua hakusanaa. 
+- `!docs <kieli> <haku>`: Hakee tietyn ohjelmointikielen tai kirjaston dokumentaatiosta annettua hakusanaa.
 - `!koodipohja <kieli>`: Näyttää yleisen koodipohjan annetulla ohjelmointikielellä.
 - `!tarkista <koodi>`: Tarkistaa annetun koodinpätkän syntaktisen oikeellisuuden.
 
